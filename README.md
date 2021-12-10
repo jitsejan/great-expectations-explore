@@ -13,3 +13,8 @@ Great Expectations depends on `numpy` which has issues with certain Python versi
 - great-expectations@0.13.46
 - numpy@1.21.4
 - pandas@1.3.4
+
+
+The next issue was opening a Jupyter notebook to add a new data source. The `mistune` packages was throwing an error that it doesn't have the `BlockGrammar` attribute. Downgrading from `2.0.0.` to `0.8.4` resolved this.
+
+
